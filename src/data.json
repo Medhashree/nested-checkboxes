@@ -1,0 +1,167 @@
+[
+    {
+      "id": 1,
+      "name": "Fruits",
+      "children": [
+        {
+          "id": 2,
+          "name": "Citrus",
+          "children": [
+            {
+              "id": 3,
+              "name": "Orange"
+            },
+            {
+              "id": 4,
+              "name": "Lemon"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Berries",
+          "children": [
+            {
+              "id": 6,
+              "name": "Strawberry"
+            },
+            {
+              "id": 7,
+              "name": "BlueBerry"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Apple"
+        },
+        {
+          "id": 9,
+          "name": "Mango"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Animals",
+      "children": [
+        {
+          "id": 11,
+          "name": "Mammals",
+          "children": [
+            {
+              "id": 12,
+              "name": "Wild",
+              "children": [
+                {
+                  "id": 13,
+                  "name": "Lion"
+                },
+                {
+                  "id": 14,
+                  "name": "Tiger"
+                },
+                {
+                  "id": 15,
+                  "name": "Elephant",
+                  "children": [
+                    {
+                      "id": 16,
+                      "name": "African Elephant"
+                    },
+                    {
+                      "id": 17,
+                      "name": "Asian Elephant"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 18,
+              "name": "Domestic",
+              "children": [
+                {
+                  "id": 19,
+                  "name": "Cow"
+                },
+                {
+                  "id": 20,
+                  "name": "Dog",
+                  "children": [
+                    {
+                      "id": 21,
+                      "name": "Labrador"
+                    },
+                    {
+                      "id": 22,
+                      "name": "German Shepherd"
+                    }
+                  ]
+                },
+                {
+                  "id": 23,
+                  "name": "Cat"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "Birds",
+          "children": [
+            {
+              "id": 25,
+              "name": "Flying",
+              "children": [
+                {
+                  "id": 26,
+                  "name": "Eagle"
+                },
+                {
+                  "id": 27,
+                  "name": "Parrot"
+                }
+              ]
+            },
+            {
+              "id": 28,
+              "name": "Non-Flying",
+              "children": [
+                {
+                  "id": 29,
+                  "name": "Penguin"
+                },
+                {
+                  "id": 30,
+                  "name": "Ostrich"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "Aquatic",
+          "children": [
+            {
+              "id": 32,
+              "name": "Fish",
+              "children": [
+                {
+                  "id": 33,
+                  "name": "Goldfish"
+                },
+                {
+                  "id": 34,
+                  "name": "Shark"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
