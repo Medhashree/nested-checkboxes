@@ -10,19 +10,32 @@ const Checkboxes = ({ data, rootData, isChecked, setIsChecked }) => {
             child.children && updateChildren(child);
         });
       };
-      updateChildren(node);
+      
 
       //if all the children is checked then it should check the parent and vice-versa
-      const verifyIsChecked = (node) => {
-        //Base Case
-        if(!node.children) return newState[node.id] || false;
+      const updateParent = (node, data) => {
+        const findParent = (nodeId, data) => {
+          for(let item of data){
+            if(item.children && item.children?.some((child) => child.id === nodeId)){
+              return item;
+            }
+            const found = item.children && findParent(nodeId, item.children);
+            if(found) return found;
+          }
+          return null;
+        };
 
-        const allowParentCheck = node.children.every((child) => verifyIsChecked(child));
-        newState[node.id] = allowParentCheck;
-        return allowParentCheck;
+
+        let parent = findParent(node.id, data);
+        while(parent){
+          const allowParentCheck = parent.children?.every((child) => newState[child.id]);
+          newState[parent.id] = allowParentCheck;
+          parent = findParent(parent.id, data);
+        }
       };
 
-      rootData.forEach((node) => verifyIsChecked(node));
+      updateChildren(node);
+      updateParent(node, rootData);
 
       return newState;
     });
